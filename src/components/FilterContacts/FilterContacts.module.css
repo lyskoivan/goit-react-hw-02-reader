@@ -1,0 +1,10 @@
+.contacts__filter {
+  border: none;
+  outline: none;
+  transition: 0.35s ease-in-out;
+  border-bottom: 1px solid rgb(170, 176, 177);
+}
+
+.contacts__filter:focus {
+  border-bottom: 1px solid rgb(35, 174, 199);
+}
