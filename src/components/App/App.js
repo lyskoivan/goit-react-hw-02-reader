@@ -32,9 +32,10 @@ export default class App extends Component {
   };
 
   handleDeleteContact = id => {
-    this.setState(state => ({
-      contacts: state.contacts.filter(contact => contact.id !== id),
-    }));
+    const { contacts } = this.state;
+    const filteredContacts = contacts.filter(contact => contact.id !== id);
+
+    this.setState({ contacts: filteredContacts });
   };
 
   render() {
